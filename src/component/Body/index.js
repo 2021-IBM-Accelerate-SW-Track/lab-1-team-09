@@ -1,3 +1,3 @@
-import Body from "./body"
+import TodoList from "./TodoList"
 
-export default Body 
+export default TodoList 

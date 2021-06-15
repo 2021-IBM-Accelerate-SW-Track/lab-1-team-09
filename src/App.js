@@ -1,13 +1,14 @@
 import Header from "./component/header"
-import Body from "./component/Body"
+import TodoList from "./component/Body/TodoList";
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
 
     <Header/>
-    <Body/>
+    <TodoList />
     </div>
   );
 }

@@ -20,7 +20,7 @@ export default function BasicTextFields() {
       <AppBar position="static" color="inherit">
         <Toolbar variant="dense">
           <Typography variant="h5" color="primary">
-            To-Do List
+            Team 9 - IBM Accelerate - Lab 01
           </Typography>
         </Toolbar>
       </AppBar>
