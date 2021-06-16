@@ -1,10 +1,9 @@
 import React, {useState} from 'react'
 import TodoForm from './TodoForm'
-import TodoList from './TodoList'
 import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
 import Checkbox from '@material-ui/core/Checkbox';
-import { withStyles } from '@material-ui/core/styles';
+
 
 
 function Todo({todos, completeTodo, removeTodo, updateTodo}) {
@@ -41,7 +40,7 @@ function Todo({todos, completeTodo, removeTodo, updateTodo}) {
                 {todo.text}
             </div>
             <div className='icons'>
-             <Checkbox checked={checked} color="default" onChange={handleChange}
+             <Checkbox  color="default" onChange={handleChange}
                             inputProps={{ 'aria-label': 'primary checkbox' }} className ='check-icon'style ={{
                                 color: "#ffffff",
                               }} />
