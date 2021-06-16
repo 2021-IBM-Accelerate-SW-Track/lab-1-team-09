@@ -31,7 +31,7 @@ function TodoForm(props) {
     };
 
     return (
-        <form className="todo-from" onSubmit={handleSubmit} >
+        <form className="todo-from" data-testid="new-item-input" onSubmit={handleSubmit} >
             <input type='text'
             placeholder="Enter Todo Text"
             value={input}
@@ -40,7 +40,7 @@ function TodoForm(props) {
             onChange={handleChange}
             ref={inputRef}
             />
-            <button className="todo-button">+</button>
+            <button className="todo-button" data-testid="new-item-button">+</button>
              </form>
     )
 }
