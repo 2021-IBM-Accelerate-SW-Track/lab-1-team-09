@@ -37,7 +37,7 @@ function Todo({todos, completeTodo, removeTodo, updateTodo}) {
         <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} 
         key={index}>
             <div key={todo.id} onClick={() => completeTodo(todo.id)}>
-                {todo.text}
+                {todo.text} :  {todo.date}/{todo.month}/{todo.year} - {todo.hour}:{todo.minute}:{todo.second} 
             </div>
             <div className='icons'>
              <Checkbox  color="default" onChange={handleChange}

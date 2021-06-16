@@ -15,9 +15,16 @@ function TodoForm(props) {
 
     const handleSubmit = e => {
         e.preventDefault();
+        var today= new Date();
         props.onSubmit({
             //unique id
-            id: Math.floor(Math.random()*10000)  ,
+            year: today.getFullYear(),
+            month: (today.getMonth()+1),
+            date: today.getDate(),
+            hour:today.getHours(),
+            minute: today.getMinutes(),
+            second:today.getSeconds(),
+            id: Math.floor(Math.random()*10000),
             text: input  
         });
         setInput('');
