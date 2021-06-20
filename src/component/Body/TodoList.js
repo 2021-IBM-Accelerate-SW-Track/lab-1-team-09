@@ -6,9 +6,11 @@ function TodoList() {
    const [todos, setTodos] = useState([]);
 
    const addTodo = todo => {
-    if (!todo.text || /^\s*$/.test(todo.text)) {
+    if (!todo.text ||/^\s*$/.test(todo.text)||
+    todos.find(x => x.text === todo.text)) {
       return;
     }
+   
 
     const newTodos = [todo, ...todos];
 
